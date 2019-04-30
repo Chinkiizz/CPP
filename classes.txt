@@ -1,0 +1,56 @@
+//C++ says that you can use same class for differrent data types.
+It works for any type of data. 
+
+We can have different types of data types in C++ using template clASS.
+WE USE CLASSES CAZ IT ALLOCATES MEMORY STRAIGHT TO HEAP WHEREAS STRUCT DOES IN STACK BY DEFAULT.
+ A CLASS ENSURES SECURITY. MEMBERS OF A CLASS ARE PVT BY DEFULT WHEREAD PUBLIC IN STRUCTURE BY DEFAULT.
+WE WANT PVT MEMBERS CAZ WE DO NOT WANT ANY NOOB TO CHANGE OUR DATA.
+CLASS
+/ Program 1 
+#include <stdio.h> 
+  
+class Test { 
+    int x; // x is private 
+}; 
+int main() 
+{ 
+  Test t; 
+  t.x = 20; // compiler error because x is private 
+  getchar(); 
+  return 0; 
+} 
+
+STRUCTURE   
+// Program 2 
+#include <stdio.h> 
+struct Test { 
+    int x; // x is public 
+}; 
+int main() 
+{ 
+  Test t; 
+  t.x = 20; // works fine because x is public 
+  getchar(); 
+  return 0;}
+
+
+I MAY LOOK NICE FROM THE OUTSIDE BUT I HAVE GOT TWO BIG ACNES ON MY CHEST AND THEY ARE CREEPIN ME OUT CAZ THEY CAME OUT CAZ OF HEAT AND HONESTLY I DONT EVEN LEAVE ANY HEAT INSIDE MY BODY UNATTENDED
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
